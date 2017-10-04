@@ -1,0 +1,12 @@
+<ul>
+    {{#each model as |evento|}}
+        <li>
+            {{#link-to 'evento-detail' evento.id tagName='button'}}
+                {{evento.nombre}}
+            {{/link-to}}
+        </li>
+    {{/each}}
+</ul>
+
+
+
